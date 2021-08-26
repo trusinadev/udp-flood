@@ -2,17 +2,17 @@
 clear
 wget -O /tmp/udpflood.py 'https://raw.githubusercontent.com/trusinadev/udp-flood/master/udpflood.py'
 chmod +x /tmp/udpflood.py
-sudo yum install epel-release -y
-sudo yum install snapd -y
-sudo yum install python38 -y
-sudo yum install python -y
+sudo apt install epel-release -y
+sudo apt install snapd -y
+sudo apt install python38 -y
+sudo apt install python -y
 sudo apt-get install python38 -y
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
-sudo yum -y update
-sudo yum -y upgrade
+sudo apt -y update
+sudo apt -y upgrade
 sudo snap install figlet
-sudo yum -y install figlet
+sudo apt -y install figlet
 cd /tmp
 clear
 while true; do
